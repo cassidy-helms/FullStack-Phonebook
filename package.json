@@ -1,0 +1,27 @@
+{
+  "name": "fullstack-phonebook",
+  "version": "1.0.0",
+  "description": "phonebook testing rest, node, and express",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cassidy-helms/FullStack-Phonebook.git"
+  },
+  "author": "Cassidy Helms",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cassidy-helms/FullStack-Phonebook/issues"
+  },
+  "homepage": "https://github.com/cassidy-helms/FullStack-Phonebook#readme",
+  "dependencies": {
+    "express": "^4.18.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
