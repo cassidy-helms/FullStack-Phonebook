@@ -1,21 +1,11 @@
 const mongoose = require('mongoose')
 
-if(process.argv.length < 3) {
-    console.log('give password as argument')
-    process.exit(1)
-}
-
-//const password = process.argv[2]
-
-//const url = `mongodb+srv://fullstack:${password}@phonebook.a8r0tkk.mongodb.net/phonebook`
-
 mongoose.set('strictQuery', false)
 
 const url = process.env.MONGODB_URI
 
 console.log('connecting to', url)
 
-//mongoose.connect(url)
 mongoose.connect(url)
     .then(result => {
         console.log('connected to mongodb')
@@ -37,5 +27,4 @@ personSchema.set('toJSON', {
     }
 })
 
-//const Person = mongoose.model('Person', personSchema)
 module.exports = mongoose.model('Person', personSchema)
